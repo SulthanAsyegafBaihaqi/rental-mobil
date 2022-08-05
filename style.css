@@ -2,6 +2,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
 nav {
   background-color: #f1f3ff;
 }
@@ -27,7 +32,9 @@ nav .navigasi button {
 nav .navigasi {
   margin-top: 8px;
 }
+/* Akhir Navbar */
 
+/* Hero */
 #hero {
   background-color: #f1f3ff;
   height: 100vh;
@@ -78,30 +85,21 @@ nav .navigasi {
   bottom: 0;
   right: 0;
 }
+/* Akhir hero */
 
-#service {
+/* Service */
+/* #service,
+#homepage {
   background-color: #e5e5e5;
-}
+} */
 
 #service .col {
   display: flex;
-}
-
-#service .col {
-  margin-top: 100px;
-  margin-right: 70px;
-  margin-left: 55px;
-}
-
-#service .col img {
-  width: 80%;
-  flex-grow: 1;
+  margin-top: 120px;
 }
 
 #service .col .content {
-  margin-top: 100px;
-  margin-right: 55px;
-  flex-grow: 1;
+  margin-left: 100px;
 }
 
 #service .col h2 {
@@ -128,6 +126,59 @@ nav .navigasi {
   line-height: 20px;
   margin-bottom: 20px;
 }
+/* Akhir service */
+
+/* Homepage "Why Us?" */
+#homepage .col {
+  margin-top: 120px;
+}
+
+#homepage .col h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#homepage .col p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.row .card-homepage {
+  display: flex;
+}
+
+.row section.card-homepage {
+  justify-content: space-between;
+}
+
+.row section.card-homepage .card {
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 30px;
+  width: 260px;
+}
+
+.row section.card-homepage .card img {
+  width: 32px;
+  height: 32px;
+  margin-left: 12px;
+  margin-top: 12px;
+}
+
+.row section.card-homepage h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.row section.card-homepage p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+/* Akhir homepage "Why Us?" */
 
 @media screen and (max-width: 1200px) {
   #hero .col {
@@ -145,6 +196,32 @@ nav .navigasi {
 @media screen and (max-width: 900px) {
   #service .col {
     flex-wrap: wrap;
+  }
+
+  #service .col .gambar img {
+    width: 100%;
+  }
+
+  #service .col .content {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #homepage .col h3,
+  #homepage .col p {
+    text-align: center;
+  }
+
+  #homepage .row .card-homepage {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #homepage .row .card-homepage .card {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
   }
 }
 
