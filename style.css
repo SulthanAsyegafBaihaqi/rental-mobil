@@ -1,0 +1,190 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #f1f3ff;
+}
+nav .navigasi a {
+  color: #000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 12px;
+}
+
+nav .navigasi button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 12px;
+  border-radius: 3px;
+  background-color: #5cb85f;
+  border: none;
+}
+
+nav .navigasi {
+  margin-top: 8px;
+}
+
+#hero {
+  background-color: #f1f3ff;
+  height: 100vh;
+  position: relative;
+}
+
+#hero .col {
+  position: relative;
+  top: 170px;
+  left: 0;
+}
+
+#hero h1 {
+  font-weight: 700;
+  font-size: 36px;
+  width: 568px;
+  height: 108px;
+  line-height: 150%;
+}
+
+#hero p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  width: 468px;
+  height: 60px;
+}
+
+#hero button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 12px;
+  background-color: #5cb85f;
+}
+
+#hero .bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#hero .mobil {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#service {
+  background-color: #e5e5e5;
+}
+
+#service .col {
+  display: flex;
+}
+
+#service .col {
+  margin-top: 100px;
+  margin-right: 70px;
+  margin-left: 55px;
+}
+
+#service .col img {
+  width: 80%;
+  flex-grow: 1;
+}
+
+#service .col .content {
+  margin-top: 100px;
+  margin-right: 55px;
+  flex-grow: 1;
+}
+
+#service .col h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  margin-left: 30px;
+}
+
+#service .col p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 143%;
+  margin-left: 30px;
+}
+
+#service .col ul {
+  list-style-type: none;
+}
+
+#service .col ul li {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  #hero .col {
+    position: relative;
+    left: 0;
+    top: 60px;
+  }
+
+  #hero .bg,
+  #hero .mobil {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #service .col {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #hero .mobil,
+  #hero .bg {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  #hero h1,
+  #hero p {
+    width: 85%;
+    margin-bottom: 30px;
+  }
+
+  #hero h1 {
+    margin-bottom: 55px;
+  }
+
+  #hero .mobil,
+  #hero .bg {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  #hero h1,
+  #hero p {
+    width: 80%;
+  }
+
+  #hero p {
+    margin-top: 120px;
+    margin-bottom: 30px;
+  }
+
+  #hero .mobil,
+  #hero .bg {
+    width: 90%;
+  }
+}
