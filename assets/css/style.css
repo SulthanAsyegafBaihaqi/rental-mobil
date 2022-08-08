@@ -180,6 +180,79 @@ nav .navigasi {
 }
 /* Akhir homepage "Why Us?" */
 
+/* Carousel */
+#testimonial .col {
+  text-align: center;
+  margin-top: 120px;
+}
+
+#testimonial .col h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#testimonial .col p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#testimonial #owl-demo .item {
+  margin: 3px;
+}
+
+#testimonial #owl-demo .item img {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+#testimonial .owl-carousel .item1,
+.item2,
+.item3,
+.item4 {
+  display: flex;
+  width: 545px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 32px;
+  margin: 40px;
+  background-color: #f1f3ff;
+}
+
+#testimonial .owl-carousel .item1 .foto img,
+#testimonial .owl-carousel .item2 .foto img,
+#testimonial .owl-carousel .item3 .foto img,
+#testimonial .owl-carousel .item4 .foto img {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 40px;
+  margin-right: 20px;
+}
+
+#testimonial .owl-carousel .item .content-carousel p {
+  font-weight: 300px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#testimonial .owl-carousel .item .content-carousel h5 {
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 8px;
+}
+#testimonial .owl-carousel .item1 .content-carousel img,
+#testimonial .owl-carousel .item2 .content-carousel img,
+#testimonial .owl-carousel .item3 .content-carousel img,
+#testimonial .owl-carousel .item4 .content-carousel img {
+  width: 80px;
+  height: 16px;
+  margin-bottom: 8px;
+}
+
 @media screen and (max-width: 1200px) {
   #hero .col {
     position: relative;
