@@ -123,6 +123,7 @@
       </div>
     </article>
 
+    <!-- Homepage -->
     <article id="homepage">
       <div class="container">
         <div class="row">
@@ -132,28 +133,28 @@
           </div>
           <section class="card-homepage">
             <div class="card">
-              <img src="assets/icon/jempol.png" class="card-img-top" alt="Icon Mobil Lengkap" />
+              <img src="assets/icon/iconComplete.svg" class="card-img-top" alt="Icon Mobil Lengkap" />
               <div class="card-body">
                 <h5 class="card-title">Mobil Lengkap</h5>
                 <p class="card-text">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
               </div>
             </div>
             <div class="card">
-              <img src="assets/icon/harga.png" class="card-img-top" alt="Icon Harga" />
+              <img src="assets/icon/iconPrice.svg" class="card-img-top" alt="Icon Harga" />
               <div class="card-body">
                 <h5 class="card-title">Harga Murah</h5>
                 <p class="card-text">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
               </div>
             </div>
             <div class="card">
-              <img src="assets/icon/24Jam.png" class="card-img-top" alt="icon Melayani 24 Jam" />
+              <img src="assets/icon/icon24hrs.svg" class="card-img-top" alt="icon Melayani 24 Jam" />
               <div class="card-body">
                 <h5 class="card-title">Layanan 24 Jam</h5>
                 <p class="card-text">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
               </div>
             </div>
             <div class="card">
-              <img src="assets/icon/profesional.png" class="card-img-top" alt="Icon Profesional" />
+              <img src="assets/icon/iconProfessional.svg" class="card-img-top" alt="Icon Profesional" />
               <div class="card-body">
                 <h5 class="card-title">Supir Profesional</h5>
                 <p class="card-text">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
@@ -164,6 +165,7 @@
       </div>
     </article>
 
+    <!-- Testimonial -->
     <article id="testimonial">
       <div class="container">
         <div class="row">
@@ -177,7 +179,7 @@
                 <img src="assets/img/foto1.png" alt="" />
               </div>
               <div class="content-carousel">
-                <img src="assets/img/rating.png" alt="" />
+                <img src="assets/icon/Rate.svg" alt="" />
                 <p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
                 </p>
@@ -189,7 +191,7 @@
                 <img src="assets/img/foto2.png" alt="" />
               </div>
               <div class="content-carousel">
-                <img src="assets/img/rating.png" alt="" />
+                <img src="assets/icon/Rate.svg" alt="" />
                 <p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
                 </p>
@@ -201,7 +203,7 @@
                 <img src="assets/img/foto1.png" alt="" />
               </div>
               <div class="content-carousel">
-                <img src="assets/img/rating.png" alt="" />
+                <img src="assets/icon/Rate.svg" alt="" />
                 <p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
                 </p>
@@ -213,7 +215,7 @@
                 <img src="assets/img/foto2.png" alt="" />
               </div>
               <div class="content-carousel">
-                <img src="assets/img/rating.png" alt="" />
+                <img src="assets/icon/Rate.svg" alt="" />
                 <p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
                 </p>
@@ -225,7 +227,23 @@
         </div>
       </div>
     </article>
-
+    
+    <!-- Card -->
+    <article id="getting-starter">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Sewa Mobil di (Lokasimu) Sekarang</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .</p>
+                <a href="#" class="btn btn-primary">Mulai Sewa Mobil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
     <!-- jQuery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/owl.carousel.js"></script>
@@ -233,13 +251,16 @@
       $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 10,
+        navText: ["<img src='assets/icon/leftButton.svg'>","<img src='assets/icon/rightButton.svg'>"],
         nav: true,
+        center: true,
+        dots: false,
         responsive: {
           0: {
             items: 1,
           },
           600: {
-            items: 1,
+            items: 3,
           },
           1000: {
             items: 2,

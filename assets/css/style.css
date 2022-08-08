@@ -252,6 +252,20 @@ nav .navigasi {
   height: 16px;
   margin-bottom: 8px;
 }
+/* Akhir testimonial */
+
+/* Card */
+#getting-starter .card-body h5 {
+  font-weight: 700px;
+  font-size: 36px;
+  line-height: 150%;
+}
+
+#getting-starter .card-body p {
+  font-weight: 300px;
+  font-size: 14px;
+  line-height: 20px;
+}
 
 @media screen and (max-width: 1200px) {
   #hero .col {
