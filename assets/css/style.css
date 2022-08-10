@@ -6,7 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Navbar */
+/* Navigation Bar */
 nav {
   background-color: #f1f3ff;
 }
@@ -32,9 +32,9 @@ nav .navigasi button {
 nav .navigasi {
   margin-top: 8px;
 }
-/* Akhir Navbar */
+/* end of navigation bar */
 
-/* Hero */
+/* Main/Hero section */
 #hero {
   background-color: #f1f3ff;
   height: 100vh;
@@ -85,7 +85,9 @@ nav .navigasi {
   bottom: 0;
   right: 0;
 }
-/* Akhir hero */
+/* End of Main/Hero section */
+
+/* Our Service Section */
 
 /* Service */
 /* #service,
@@ -126,9 +128,9 @@ nav .navigasi {
   line-height: 20px;
   margin-bottom: 20px;
 }
-/* Akhir service */
+/* End of Our Navigation Section*/
 
-/* Homepage "Why Us?" */
+/* Why Us Section */
 #homepage .col {
   margin-top: 120px;
 }
@@ -178,26 +180,28 @@ nav .navigasi {
   font-size: 14px;
   line-height: 20px;
 }
-/* Akhir homepage "Why Us?" */
+/* End of Why Us Section */
 
-/* Carousel */
-#testimonial .col {
+/* Testimonial Section */
+/* Head */
+#testimonial .head {
   text-align: center;
   margin-top: 120px;
 }
 
-#testimonial .col h3 {
+#testimonial .head h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
 }
 
-#testimonial .col p {
+#testimonial .head p {
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
 }
 
+/* Carousel */
 #testimonial #owl-demo .item {
   margin: 3px;
 }
@@ -213,7 +217,8 @@ nav .navigasi {
 .item3,
 .item4 {
   display: flex;
-  width: 545px;
+  width: 619px;
+  height: 270px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   padding: 32px;
@@ -252,17 +257,102 @@ nav .navigasi {
   height: 16px;
   margin-bottom: 8px;
 }
-/* Akhir testimonial */
+/* End of Testimonial Section */
 
-/* Card */
-#getting-starter .card-body h5 {
+/* Getting Started Section */
+#getting-starter .card-body h3 {
   font-weight: 700px;
   font-size: 36px;
   line-height: 150%;
+  margin-top: 30px;
+  margin-bottom: 16px;
 }
 
 #getting-starter .card-body p {
   font-weight: 300px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 52px;
+}
+
+#getting-starter .card {
+  background-color: #0d28a6;
+  color: #fff;
+  border-radius: 13px;
+  margin-top: 120px;
+  width: 100%;
+}
+
+#getting-starter .card button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 12px;
+  border-radius: 3px;
+  background-color: #5cb85f;
+  border: none;
+  margin-bottom: 30px;
+}
+/* End of Getting Started Section */
+
+/* Frequently Asked Question Section */
+#question-section {
+  margin-top: 120px;
+}
+
+#question-section .col h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#question-section .col p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+#question-section .accordion .show .accordion-body p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#question-section .row .accordion {
+  width: 75%;
+  float: right;
+  margin-left: -100px;
+}
+/* End of Frequently Asked Question Section  */
+
+/* Footer */
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+
+footer .container p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+footer .connection ul li {
+  list-style: none;
+}
+
+footer .information ul li {
+  list-style: none;
+}
+
+footer .connection a {
+  margin-left: 8px;
+}
+
+footer .feature ul li {
+  list-style: none;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
