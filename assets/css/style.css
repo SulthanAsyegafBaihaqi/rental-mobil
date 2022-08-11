@@ -107,11 +107,6 @@ nav .navigasi {
 /* Our Service Section */
 
 /* Service */
-/* #service,
-#homepage {
-  background-color: #e5e5e5;
-} */
-
 #service .col {
   display: flex;
   margin-top: 130px;
@@ -230,8 +225,7 @@ nav .navigasi {
   display: flex;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
-  width: 95%;
-  height: 270px;
+  width: 90%;
   padding: 32px;
   margin: 40px;
   background-color: #f1f3ff;
@@ -245,21 +239,23 @@ nav .navigasi {
   height: 80px;
   position: relative;
   top: 50px;
-  margin-right: 20px;
+  margin-right: 35px;
+  margin-left: 15px;
 }
 
-#testimonial .owl-carousel .item .content-carousel p {
-  font-weight: 300px;
+#testimonial .owl-carousel .content-carousel p {
+  font-weight: 300;
   font-size: 14px;
   line-height: 20px;
 }
 
-#testimonial .owl-carousel .item .content-carousel h5 {
-  font-weight: 400px;
+#testimonial .owl-carousel .content-carousel h5 {
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin-top: 8px;
+  margin-top: 5px;
 }
+
 #testimonial .owl-carousel .item1 .content-carousel img,
 #testimonial .owl-carousel .item2 .content-carousel img,
 #testimonial .owl-carousel .item3 .content-carousel img,
@@ -267,7 +263,7 @@ nav .navigasi {
   width: 80px;
   height: 16px;
   margin-bottom: 10px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 /* End of Testimonial Section */
 
@@ -313,7 +309,6 @@ nav .navigasi {
 /* End of Getting Started Section */
 
 /* Frequently Asked Question Section */
-
 #question-section .col {
   margin-top: 120px;
 }
@@ -368,21 +363,21 @@ footer .container h6 {
   margin-bottom: 12px;
 }
 
-footer .connection {
+.connection__footer {
   margin-left: 120px;
   margin-right: 120px;
 }
 
-footer .connection p {
+.connection__footer p {
   display: inline-flex;
   justify-content: space-between;
 }
 
-footer .information {
+.information__footer {
   margin-right: 90px;
 }
 
-footer .feature ul li {
+.feature__footer ul li {
   list-style: none;
   font-weight: 400;
   font-size: 14px;
@@ -449,15 +444,15 @@ footer .feature ul li {
     flex-direction: column;
   }
 
-  footer .connection p {
+  footer .connection__footer p {
     margin-right: 10px;
   }
 
-  footer .feature ul li {
+  footer .feature__footer ul li {
     margin-top: 15px;
     margin-left: -32px;
   }
-  footer .connection {
+  footer .connection__footer {
     margin-left: -3px;
     margin-top: 15px;
     margin-bottom: 15px;
