@@ -1,15 +1,24 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Navigation Bar */
 nav {
   background-color: #f1f3ff;
 }
+
+nav .navigasi a:hover {
+  font-weight: bold;
+}
+
 nav .navigasi a {
   color: #000;
   font-weight: 400;
@@ -27,6 +36,10 @@ nav .navigasi button {
   border-radius: 3px;
   background-color: #5cb85f;
   border: none;
+}
+
+nav button:hover {
+  background-color: rgb(6, 148, 6);
 }
 
 nav .navigasi {
@@ -52,7 +65,7 @@ nav .navigasi {
   font-size: 36px;
   width: 568px;
   height: 108px;
-  line-height: 150%;
+  line-height: 54px;
 }
 
 #hero p {
@@ -72,6 +85,10 @@ nav .navigasi {
   border-radius: 3px;
   padding: 8px 12px;
   background-color: #5cb85f;
+}
+
+#hero button:hover {
+  background-color: rgb(6, 148, 6);
 }
 
 #hero .bg {
@@ -97,24 +114,24 @@ nav .navigasi {
 
 #service .col {
   display: flex;
-  margin-top: 120px;
+  margin-top: 130px;
 }
 
-#service .col .content {
+#service .col .content--service {
   margin-left: 100px;
 }
 
 #service .col h2 {
   font-weight: 700;
   font-size: 24px;
-  line-height: 150%;
+  line-height: 36px;
   margin-left: 30px;
 }
 
 #service .col p {
   font-weight: 300;
   font-size: 14px;
-  line-height: 143%;
+  line-height: 20px;
   margin-left: 30px;
 }
 
@@ -128,11 +145,16 @@ nav .navigasi {
   line-height: 20px;
   margin-bottom: 20px;
 }
+
+#service .col ul li img {
+  margin-right: 8px;
+}
 /* End of Our Navigation Section*/
 
 /* Why Us Section */
+
 #homepage .col {
-  margin-top: 120px;
+  margin-top: 130px;
 }
 
 #homepage .col h3 {
@@ -147,35 +169,34 @@ nav .navigasi {
   line-height: 20px;
 }
 
-.row .card-homepage {
+#homepage .card-homepage {
   display: flex;
 }
 
-.row section.card-homepage {
+#homepage section.card-homepage {
   justify-content: space-between;
 }
 
-.row section.card-homepage .card {
-  box-sizing: border-box;
+#homepage .card--all--homepage {
   padding: 10px;
   margin-top: 30px;
   width: 260px;
 }
 
-.row section.card-homepage .card img {
+#homepage .card--all--homepage img {
   width: 32px;
   height: 32px;
   margin-left: 12px;
   margin-top: 12px;
 }
 
-.row section.card-homepage h5 {
+#homepage .card--all--homepage h5 {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
 }
 
-.row section.card-homepage p {
+#homepage .card--all--homepage p {
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
@@ -184,43 +205,33 @@ nav .navigasi {
 
 /* Testimonial Section */
 /* Head */
-#testimonial .head {
+#testimonial .header--testimonial {
   text-align: center;
   margin-top: 120px;
 }
 
-#testimonial .head h3 {
+#testimonial .header--testimonial h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
 }
 
-#testimonial .head p {
+#testimonial .header--testimonial p {
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
 }
 
 /* Carousel */
-#testimonial #owl-demo .item {
-  margin: 3px;
-}
-
-#testimonial #owl-demo .item img {
-  display: flex;
-  width: 100%;
-  height: auto;
-}
-
 #testimonial .owl-carousel .item1,
 .item2,
 .item3,
 .item4 {
   display: flex;
-  width: 619px;
-  height: 270px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
+  width: 95%;
+  height: 270px;
   padding: 32px;
   margin: 40px;
   background-color: #f1f3ff;
@@ -233,7 +244,7 @@ nav .navigasi {
   width: 80px;
   height: 80px;
   position: relative;
-  top: 40px;
+  top: 50px;
   margin-right: 20px;
 }
 
@@ -255,13 +266,14 @@ nav .navigasi {
 #testimonial .owl-carousel .item4 .content-carousel img {
   width: 80px;
   height: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 /* End of Testimonial Section */
 
 /* Getting Started Section */
 #getting-starter .card-body h3 {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
   line-height: 150%;
   margin-top: 30px;
@@ -269,7 +281,7 @@ nav .navigasi {
 }
 
 #getting-starter .card-body p {
-  font-weight: 300px;
+  font-weight: 300;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 52px;
@@ -294,11 +306,20 @@ nav .navigasi {
   border: none;
   margin-bottom: 30px;
 }
+
+#getting-starter button:hover {
+  background-color: rgb(6, 148, 6);
+}
 /* End of Getting Started Section */
 
 /* Frequently Asked Question Section */
-#question-section {
+
+#question-section .col {
   margin-top: 120px;
+}
+
+#question-section .accordion {
+  margin-top: 60px;
 }
 
 #question-section .col h3 {
@@ -311,6 +332,11 @@ nav .navigasi {
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
+}
+
+#question-section .accordion .accordion-item {
+  border-radius: 4px;
+  border: 1px solid #d4d4d4;
 }
 #question-section .accordion .show .accordion-body p {
   font-weight: 300;
@@ -326,28 +352,34 @@ nav .navigasi {
 /* End of Frequently Asked Question Section  */
 
 /* Footer */
+footer {
+  margin-bottom: 70px;
+}
 footer .container {
   display: flex;
-  justify-content: space-between;
-  margin-top: 120px;
+  justify-content: flex-start;
+  margin-top: 130px;
 }
 
-footer .container p {
+footer .container h6 {
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 12px;
 }
 
-footer .connection ul li {
-  list-style: none;
+footer .connection {
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
-footer .information ul li {
-  list-style: none;
+footer .connection p {
+  display: inline-flex;
+  justify-content: space-between;
 }
 
-footer .connection a {
-  margin-left: 8px;
+footer .information {
+  margin-right: 90px;
 }
 
 footer .feature ul li {
@@ -355,8 +387,11 @@ footer .feature ul li {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 15px;
 }
+/* End point footer */
 
+/* Breakpoint */
 @media screen and (max-width: 1200px) {
   #hero .col {
     position: relative;
@@ -377,9 +412,10 @@ footer .feature ul li {
 
   #service .col .gambar img {
     width: 100%;
+    object-position: center;
   }
 
-  #service .col .content {
+  #service .col .content--service {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -400,12 +436,50 @@ footer .feature ul li {
     margin-left: auto;
     width: 100%;
   }
+
+  #testimonial .owl-carousel .item1,
+  .item2,
+  .item3,
+  .item4 {
+    width: auto;
+  }
+
+  footer .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  footer .connection p {
+    margin-right: 10px;
+  }
+
+  footer .feature ul li {
+    margin-top: 15px;
+    margin-left: -32px;
+  }
+  footer .connection {
+    margin-left: -3px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 750px) {
   #hero .mobil,
   #hero .bg {
     width: 80%;
+  }
+
+  #question-section .container .col {
+    width: 100%;
+    text-align: center;
+  }
+
+  #question-section .row .accordion {
+    float: none;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -423,6 +497,37 @@ footer .feature ul li {
   #hero .mobil,
   #hero .bg {
     width: 90%;
+  }
+
+  #testimonial .owl-carousel .item1,
+  .item2,
+  .item3,
+  .item4 {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  #testimonial .owl-carousel .item1 .content-carousel img,
+  #testimonial .owl-carousel .item2 .content-carousel img,
+  #testimonial .owl-carousel .item3 .content-carousel img,
+  #testimonial .owl-carousel .item4 .content-carousel img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #testimonial .owl-carousel .item1 img,
+  #testimonial .owl-carousel .item2 img,
+  #testimonial .owl-carousel .item3 img,
+  #testimonial .owl-carousel .item4 img {
+    margin-bottom: 60px;
+    margin-left: 21px;
+  }
+
+  #getting-starter .card h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
   }
 }
 
@@ -442,3 +547,4 @@ footer .feature ul li {
     width: 90%;
   }
 }
+/* End of breakpoint */

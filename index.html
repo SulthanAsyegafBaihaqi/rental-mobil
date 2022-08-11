@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="assets/icon/rectangle.svg" alt="rectangle">
@@ -41,10 +41,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto navigasi">
-            <a class="nav-link" aria-current="page" href="#">Out Service</a>
-            <a class="nav-link" aria-current="page" href="#">Why Us</a>
-            <a class="nav-link" aria-current="page" href="#">Testimonial</a>
-            <a class="nav-link" aria-current="page" href="#">FAQ</a>
+            <a class="nav-link" aria-current="page" href="#service">Out Service</a>
+            <a class="nav-link" aria-current="page" href="#homepage">Why Us</a>
+            <a class="nav-link" aria-current="page" href="#testimonial">Testimonial</a>
+            <a class="nav-link" aria-current="page" href="#question-section">FAQ</a>
             <button type="button"">Register</button>
           </div>
         </div>
@@ -76,7 +76,7 @@
             <div class="gambar">
               <img src="assets/img/mba_Happy.png" alt="Mba-mba happy" />
             </div>
-            <div class="content">
+            <div class="content--service">
               <h2>Best Car Rental for any kind of trip in (Lokasimu)!</h2>
               <p>
                 Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata,
@@ -84,38 +84,23 @@
               </p>
               <ul>
                 <li>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="12" fill="#CFD4ED" />
-                    <path d="M17.3333 8L9.99996 15.3333L6.66663 12" stroke="#0D28A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+                  <img src="assets/icon/ceklis.svg" alt="icon ceklis">
                   Sewa Mobil Dengan Supir di Bali 12 Jam
                 </li>
                 <li>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="12" fill="#CFD4ED" />
-                    <path d="M17.3333 8L9.99996 15.3333L6.66663 12" stroke="#0D28A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+                  <img src="assets/icon/ceklis.svg" alt="icon ceklis">
                   Sewa Mobil Lepas Kunci di Bali 24 Jam
                 </li>
                 <li>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="12" fill="#CFD4ED" />
-                    <path d="M17.3333 8L9.99996 15.3333L6.66663 12" stroke="#0D28A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+                  <img src="assets/icon/ceklis.svg" alt="icon ceklis">
                   Sewa Mobil Jangka Panjang Bulanan
                 </li>
                 <li>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="12" fill="#CFD4ED" />
-                    <path d="M17.3333 8L9.99996 15.3333L6.66663 12" stroke="#0D28A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+                  <img src="assets/icon/ceklis.svg" alt="icon ceklis">
                   Gratis Antar - Jemput Mobil di Bandara
                 </li>
                 <li>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="12" fill="#CFD4ED" />
-                    <path d="M17.3333 8L9.99996 15.3333L6.66663 12" stroke="#0D28A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+                  <img src="assets/icon/ceklis.svg" alt="icon ceklis">
                   Layanan Airport Transfer / Drop In Out
                 </li>
               </ul>
@@ -135,28 +120,28 @@
             <p>Mengapa harus pilih Binar Car Rental?</p>
           </div>
           <section class="card-homepage">
-            <div class="card">
+            <div class="card card--all--homepage">
               <img src="assets/icon/iconComplete.svg" class="card-img-top" alt="Icon Mobil Lengkap" />
               <div class="card-body">
                 <h5 class="card-title">Mobil Lengkap</h5>
                 <p class="card-text">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
               </div>
             </div>
-            <div class="card">
+            <div class="card card--all--homepage">
               <img src="assets/icon/iconPrice.svg" class="card-img-top" alt="Icon Harga" />
               <div class="card-body">
                 <h5 class="card-title">Harga Murah</h5>
                 <p class="card-text">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
               </div>
             </div>
-            <div class="card">
+            <div class="card card--all--homepage">
               <img src="assets/icon/icon24hrs.svg" class="card-img-top" alt="icon Melayani 24 Jam" />
               <div class="card-body">
                 <h5 class="card-title">Layanan 24 Jam</h5>
                 <p class="card-text">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
               </div>
             </div>
-            <div class="card">
+            <div class="card card--all--homepage">
               <img src="assets/icon/iconProfessional.svg" class="card-img-top" alt="Icon Profesional" />
               <div class="card-body">
                 <h5 class="card-title">Supir Profesional</h5>
@@ -171,9 +156,13 @@
 
     <!-- Testimonial Section -->
     <article id="testimonial">
-          <div class="head">
-            <h3>TESTIMONIAL</h3>
-            <p>Berbagai review positif dari para pelanggan kami</p>
+          <div class="row">
+            <div class="col">
+              <div class="header--testimonial">
+                <h3>TESTIMONIAL</h3>
+                <p>Berbagai review positif dari para pelanggan kami</p>
+              </div>
+            </div>
           </div>
           <div class="owl-carousel owl-theme">
             <div class="item1">
@@ -339,12 +328,12 @@
           </ul>
         </div>
         <div class="connection">
-          <p>Connect with us</p>
-            <a href="#"><img src="assets/icon/iconFacebook.svg" alt="icon facebook"></a>
-            <a href=""><img src="assets/icon/iconInstagram.svg" alt="icon instagram"></a>
-            <a href=""><img src="assets/icon/iconTwitter.svg" alt="icon twitter"></a>
-            <a href=""><img src="assets/icon/iconMail.svg" alt="icon gmail"></a>
-           <a href=""><img src="assets/icon/iconTwitch.svg" alt="icon twitch"></a>
+          <h6>Connect with us</h6>
+          <p><a href="#"><img src="assets/icon/iconFacebook.svg" alt="icon facebook"></a></p>
+          <p><a href="#"><img src="assets/icon/iconInstagram.svg" alt="icon instagram"></a></p>
+          <p><a href="#"><img src="assets/icon/iconTwitter.svg" alt="icon twitter"></a></p>
+          <p><a href="#"><img src="assets/icon/iconMail.svg" alt="icon gmail"></a></p>
+          <p><a href="#"><img src="assets/icon/iconTwitch.svg" alt="icon twitch"></a></p>
         </div>
         <div class="logo">
           <p>Copyright Binar 2022</p>
@@ -372,7 +361,7 @@
             items: 1,
           },
           600: {
-            items: 3,
+            items: 1,
           },
           1000: {
             items: 2,
