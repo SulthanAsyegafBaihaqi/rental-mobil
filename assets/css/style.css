@@ -406,7 +406,7 @@ footer .container h6 {
   }
 
   #service .col .gambar img {
-    width: auto;
+    width: 100%;
   }
 
   #service .col .content--service {
@@ -530,19 +530,33 @@ footer .container h6 {
 }
 
 @media screen and (max-width: 465px) {
-  #hero h1,
-  #hero p {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 30px;
     width: 80%;
+    margin-bottom: 5px;
   }
 
   #hero p {
-    margin-top: 120px;
     margin-bottom: 30px;
+    font-size: 12px;
+    width: 100%;
   }
 
   #hero .mobil,
   #hero .bg {
     width: 90%;
+  }
+
+  #service .col .gambar img {
+    width: 80%;
+    margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  #hero h1 {
+    margin-bottom: 30px;
   }
 }
 /* End of breakpoint */
