@@ -400,14 +400,13 @@ footer .container h6 {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   #service .col {
     flex-wrap: wrap;
   }
 
   #service .col .gambar img {
-    width: 100%;
-    object-position: center;
+    width: auto;
   }
 
   #service .col .content--service {
@@ -459,10 +458,10 @@ footer .container h6 {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   #hero .mobil,
   #hero .bg {
-    width: 80%;
+    width: 65%;
   }
 
   #question-section .container .col {
@@ -478,7 +477,11 @@ footer .container h6 {
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 576px) {
+  #hero .col {
+    position: relative;
+    top: 30px;
+  }
   #hero h1,
   #hero p {
     width: 85%;
@@ -491,7 +494,7 @@ footer .container h6 {
 
   #hero .mobil,
   #hero .bg {
-    width: 90%;
+    width: 75%;
   }
 
   #testimonial .owl-carousel .item1,
